@@ -4,6 +4,16 @@ let stockQty = 50;
 let priceHoddie = 1500;
 let priceTshirt = 800;
 let priceEmbrodery = 2000;
+const infoText=`
+  <ul class="nav justify-content-center bg-light ">
+    <li class="nav-item">
+      <a class="nav-link active text-primary " aria-current="page" href="https://www.mercadopago.com.ar/home" >Pagar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-primary" aria-current="page" href="" >Seguir comprando</a>
+    </li>
+  </ul> 
+`
 class Product {
   constructor(id, type, quantity, price, number) {
     this.productId = id;
@@ -71,18 +81,9 @@ productList2.forEach((item, idNumber) => {
     let itemQty = document.getElementById(`itemQty${idNumber + 1}`).value;
     if (itemQty != 'Cantidad') {
       productList.push(new Product(item.productId, item.name, parseInt(itemQty), item.price, idNumber + 1));
-      itemQty = document.getElementById(`itemQty${idNumber + 1}`);
-      itemQty.innerHTML = `<option selected>Cantidad</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>`;
       if (productList.length > 0) {
-        let buttons = document.getElementById('buttons');
         let message=document.getElementById(`text${idNumber + 1}`);
-        message.innerHTML=`<br><p class="text-center bg-success text-white fs-3">${item.name} agregado al carrito</p>`;
-        buttons.innerHTML = `<br><a class="btn m-1 btn-dark" id="finalizar">Ver carrito</a><a class="btn m-1 btn-dark" href="" id="clearAll">Vaciar Carrito</a><br>`
+        message.innerHTML=`<br><p class="text-center bg-success text-white fs-5">${item.name} agregado al carrito</p>`;
         setTimeout(function () {
           location.href = "index.html";
           list();
@@ -98,7 +99,7 @@ productList2.forEach((item, idNumber) => {
 function showAll() {
   let end = document.getElementById('finalizar');
   end.addEventListener('click', () => {
-    buttons.innerHTML = `<a class="btn m-1 btn-danger" href="" id="clearAll">Vaciar Carrito</a><br>`
+    buttons.innerHTML = `<a class="btn m-1 text-danger" href="" id="clearAll">Vaciar Carrito</a><br>`
     clearList();
     list();
     let productResume = JSON.parse(localStorage.getItem("Productos"));
@@ -106,14 +107,14 @@ function showAll() {
       insertProducts.innerHTML = ""
       productResume.forEach((item, idNumber) => {
         finalPrice += item.price * item.qty;
-        document.getElementById('finalPrice').innerHTML = `<p class="text-center p-2">Total: ${finalPrice}</p><br><div><a class="btn m-2  p-2 btn-primary" href="https://www.mercadopago.com.ar/home" >Pagar</a>
-              <a class="btn m-2  p-2 btn-primary" href="" >Seguir Comprando</a></div>`;
-        insertProducts.innerHTML += `<div id="product${idNumber + 1}"class="card m-3  p-1 text-center" style="width: 18rem;">
+        document.getElementById('finalPrice').innerHTML = `<p class="text-center bg-dark p-2 text-white">Total: ${finalPrice}</p><br>`+infoText;
+        insertProducts.innerHTML +=`<div id="product${idNumber + 1}"class="card m-3  p-1 text-center" style="width: 18rem;">
               <a ><img src="./Multimedia/product${item.imgId}.jpg"class="card-img-top" alt="..."></a>
               <div class="card-body">
               <h5 class="card-title"><strong>${item.name}</strong></h5>
               <p class="card-text">Cantidad: ${item.qty} </p>
-              <p class="card-text">Precio: ${item.price} </p>
+              <p>Precio unidad ${item.price} </p>
+              <p class="card-text text-primary"\n>Precio Final: `+item.qty*item.price+`</p>
               <div><a class="btn m-2  p-2 btn-danger" id="deleteItem${idNumber + 1}" >Eliminar</a></div></div>`
       })
     if (productResume) {
@@ -127,9 +128,9 @@ function showAll() {
             setTimeout(function () {
               location.href = "index.html";
             }, 1000)
-            document.getElementById('finalPrice').innerHTML = `<p class="text-center p-2"id="${idNumber + 1}">Total: ${finalPrice - (item.price * item.qty)}</p><br><div><a class="btn m-2  p-2 btn-primary" href="https://www.mercadopago.com.ar/home" >Pagar</a>
-            <a class="btn m-2  p-2 btn-primary" href="" >Seguir Comprando</a></div>`
+            document.getElementById('finalPrice').innerHTML = `<p class="text-center p-2"id="${idNumber + 1}">Total: ${finalPrice - (item.price * item.qty)}</p><br>`+infoText;
             localStorage.setItem("Productos", JSON.stringify(productResume));
+            finalPrice=finalPrice - (item.price * item.qty)
           }
           if (productResume.length == 0) {
             document.getElementById('finalPrice').innerHTML = `<p class="text-center p-2"id="${idNumber + 1}">Volvemos a la tienda</p>`
@@ -148,7 +149,12 @@ function showAll() {
 let productResume = JSON.parse(localStorage.getItem("Productos"));
 if (productResume) {
   let button = document.getElementById('buttons');
-  button.innerHTML = '<a class="btn m-1 btn-dark" id="finalizar">Ver carrito</a>'
+  button.innerHTML = `
+  <ul class="nav justify-content-center bg-dark">
+  <li class="nav-item ">
+    <a class="nav-link active text-white text-uppercase fs-5" aria-current="page" href="#"id="finalizar">Ver carrito</a>
+  </li>
+</ul>`
   showAll();
 }
 // busca en todo el array los productos con el mismo nombre y suma las cantidades para tener una cantidad final
