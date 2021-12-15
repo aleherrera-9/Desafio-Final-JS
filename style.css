@@ -1,9 +1,13 @@
 .carousel{
 margin: 50px;
 }
-#finalizar,.nav-item{
+.nav-item{
    background-color:rgba(159, 139, 187, 0.541);
    border-radius: 10px;
+}
+#finalizar{
+    background-color:rgba(139, 187, 171, 0.541);
+    border-radius: 10px; 
 }
 #list{
     background-color: rgba(215, 247, 250, 0.205);
