@@ -1,0 +1,86 @@
+[
+    {
+        "productId": 1,
+        "name": "Buzo Sunflower",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 1
+    },
+    {
+        "productId": 2,
+        "name": "Buzo Life",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 2
+    },
+    {
+        "productId": 3,
+        "name": "Buzo Promisses",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 3
+    },
+    {
+        "productId": 4,
+        "name": "Buzo Rainbow",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 4
+    },
+    {
+        "productId": 5,
+        "name": "Buzo Cactus",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 5
+    },
+    {
+        "productId": 6,
+        "name": "Buzo Deer",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 6
+    },
+    {
+        "productId": 7,
+        "name": "Bolsa",
+        "qty": 0,
+        "price": 800,
+        "imgId": 7
+    },
+    {
+        "productId": 8,
+        "name": "AOT",
+        "qty": 0,
+        "price": 2000,
+        "imgId": 8
+    },
+    {
+        "productId": 9,
+        "name": "Chihiro",
+        "qty": 0,
+        "price": 2000,
+        "imgId": 9
+    },
+    {
+        "productId": 10,
+        "name": "Demon Slayer",
+        "qty": 0,
+        "price": 2000,
+        "imgId": 10
+    },
+    {
+        "productId": 11,
+        "name": "Given",
+        "qty": 0,
+        "price": 1000,
+        "imgId": 11
+    },
+    {
+        "productId": 12,
+        "name": "Amorfo",
+        "qty": 0,
+        "price": 1500,
+        "imgId": 12
+    }
+]

@@ -1,0 +1,32 @@
+.carousel{
+margin: 50px;
+}
+#finalizar,.nav-item{
+   background-color:rgba(159, 139, 187, 0.541);
+   border-radius: 10px;
+}
+#list{
+    background-color: rgba(215, 247, 250, 0.205);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#logo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+#logo img{
+    background-color: rgba(238, 238, 238, 0.493);
+    border-radius: 360px;
+}
+#delay{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;  
+}
+.newText{
+    color: white;  
+}
