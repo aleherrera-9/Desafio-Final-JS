@@ -14,68 +14,52 @@
 </head>
 
 <body>
- <header>
-  <nav class="nav flex-column">
-    <div id="logo">
-      <a href="index.html"><p class="text-dark fw-lighter">IBASHO</p></a>
-    </div>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <div class="input-group mb-3">
-            <input id="itemSearch" type="text" class="form-control" placeholder="Buscar" aria-label="Items search"
-              aria-describedby="button-addon2">
-            <button class="btn" type="button" id="button-addon2"><svg
-                xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="dark" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg></button>
-          </div>
+  <header>
+    <nav class="nav flex-column">
+      <div id="logo">
+        <a href="index.html">
+          <p class="text-dark fw-lighter">IBASHO</p>
         </a>
-      </li>
-      <li class="nav-item" id="basket">
-      </li>
-
-    </ul>
-  </nav>
- </header>
+      </div>
+    </nav>
+  </header>
   <div id="slider">
-    <a href=""><img src="Multimedia/slider-rebajas-d.gif" class="d-block w-100" alt="..."></a>
+    <a ><img src="Multimedia/slider-rebajas-d.gif" class="d-block w-100  text-center"  height="500" alt="..."></a>
   </div>
+  <nav class="nav flex-column"></nav>
+  <ul class="nav justify-content-end">
+    <li class="nav-item text-center" id="basket">
+    </li>
+  </ul>
+</nav>
   <div class=" text-center" id="buttons"></div>
   </div>
-  <div class="container">
+  <div class="container ">
     <div class="row">
       <div class="col-2">
         <aside>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><p >Filtrar por</p></li>
-            <li class="list-group-item text-uppercase"><p >tipo</p>
-            <ul class="list-group list-group-flush">
-              <li  class="list-group-item"><a >Bolsas</a></li>
-              <li  class="list-group-item"><a >Personalizados</a></li>
-              <li  class="list-group-item"><a >Buzos</a></li>
-              <li  class="list-group-item"><a >Camperas</a></li>
-            </ul>
+            <li class="list-group-item">
+              <p>Filtrar por</p>
             </li>
-            <li class="list-group-item text-uppercase"><p >color</p>
+            <li class="list-group-item text-uppercase">
+              <p>tipo</p>
               <ul class="list-group list-group-flush">
-                <li  class="list-group-item"><a >Negro</a></li>
-                <li  class="list-group-item"><a >Marron</a></li>
-                <li  class="list-group-item"><a >Gris</a></li>
-                <li  class="list-group-item"><a >Blanco</a></li>
-                <li  class="list-group-item"><a >Celeste</a></li>
-                <li  class="list-group-item"><a >Otros</a></li>
-              </ul></li>
-            <li class="list-group-item text-uppercase"><p >precio</p>
+                <li class="list-group-item"><button id="camperas">Camperas</button></li>
+                <li class="list-group-item"><button id="bolsas">Bolsas</button></li>
+                <li class="list-group-item"><button id="buzos">Buzos</button></li>
+                <li class="list-group-item"><button id="bordados">Bordados</button></li>
+              </ul>
+            </li>
+            <li class="list-group-item text-uppercase">
+              <p>precio</p>
               <ul class="list-group list-group-flush">
-                <li  class="list-group-item"><a >Precio mas bajo</a></li>
-                <li  class="list-group-item"><a >Precio mas alto</a></li>
+                <li class="list-group-item"><button id="low">Mas bajo</button></li>
+                <li class="list-group-item"><button id="high">Mas alto</button></li>
               </ul>
             </li>
           </ul>
-          
+
         </aside>
       </div>
       <div class="col-10">

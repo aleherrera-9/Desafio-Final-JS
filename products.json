@@ -4,84 +4,108 @@
         "name": "Batman Chic",
         "qty": 0,
         "price": 1500,
-        "imgId": 1
+        "imgId": 1,
+        "type":"campera",
+        "onSale":false
     },
     {
         "productId": 2,
         "name": "White Flowers",
         "qty": 0,
         "price": 1500,
-        "imgId": 2
+        "imgId": 2,
+        "type":"buzo",
+        "onSale":false
     },
     {
         "productId": 3,
         "name": "Valentine",
         "qty": 0,
         "price": 1500,
-        "imgId": 3
+        "imgId": 3,
+        "type":"buzo",
+        "onSale":true
     },
     {
         "productId": 4,
         "name": "Blue Flowers",
         "qty": 0,
         "price": 1500,
-        "imgId": 4
+        "imgId": 4,
+        "type":"buzo",
+        "onSale":false
     },
     {
         "productId": 5,
         "name": "Margarita",
         "qty": 0,
         "price": 1500,
-        "imgId": 5
+        "imgId": 5,
+        "type":"campera",
+        "onSale":false
     },
     {
         "productId": 6,
         "name": "Creative Flower",
         "qty": 0,
         "price": 1500,
-        "imgId": 6
+        "imgId": 6,
+        "type":"buzo",
+        "onSale":true
     },
     {
         "productId": 7,
         "name": "Rainbow",
         "qty": 0,
         "price": 1500,
-        "imgId": 7
+        "imgId": 7,
+        "type":"buzo",
+        "onSale":true
     },
     {
         "productId": 8,
         "name": "Promisses",
         "qty": 0,
         "price": 1500,
-        "imgId": 8
+        "imgId": 8,
+        "type":"buzo",
+        "onSale":false
     },
     {
         "productId": 9,
         "name": "Life",
         "qty": 0,
         "price": 1500,
-        "imgId": 9
+        "imgId": 9,
+        "type":"buzo",
+        "onSale":false
     },
     {
         "productId": 10,
         "name": "Sunflower",
         "qty": 0,
         "price": 1500,
-        "imgId": 10
+        "imgId": 10,
+        "type":"buzo",
+        "onSale":true
     },
     {
         "productId": 11,
         "name": "Deer",
         "qty": 0,
         "price": 1500,
-        "imgId": 11
+        "imgId": 11,
+        "type":"buzo",
+        "onSale":true
     },
     {
         "productId": 12,
         "name": "Cacuts",
         "qty": 0,
         "price": 1500,
-        "imgId": 12
+        "imgId": 12,
+        "type":"buzo",
+        "onSale":true
     }
     ,  
     {
@@ -89,41 +113,53 @@
         "name": "Chihiro",
         "qty": 0,
         "price": 3000,
-        "imgId": 13
+        "imgId": 13,
+        "type":"bordado",
+        "onSale":false
     },
     {
         "productId": 14,
         "name": "Human",
         "qty": 0,
         "price": 2000,
-        "imgId": 14
+        "imgId": 14,
+        "type":"bordado",
+        "onSale":true
     },
     {
         "productId": 15,
         "name": "Demon Slayer",
         "qty": 0,
         "price": 2000,
-        "imgId": 15
+        "imgId": 15,
+        "type":"bordado",
+        "onSale":false
     },
     {
         "productId": 16,
         "name": "AOT",
         "qty": 0,
         "price": 2000,
-        "imgId": 16
+        "imgId": 16,
+        "type":"bordado",
+        "onSale":false
     },
     {
         "productId": 17,
         "name": "Given",
         "qty": 0,
         "price": 2000,
-        "imgId": 17
+        "imgId": 17,
+        "type":"bordado",
+        "onSale":true
     },
     {
         "productId": 18,
         "name": "Saiki",
         "qty": 0,
         "price": 1000,
-        "imgId": 18
+        "imgId": 18,
+        "type":"bolsa",
+        "onSale":true
     }
 ]

@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
   }
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+  #basket{
+      background-color: tomato;
+      border-radius: 180px;
+  }
 header{
  background-color: rgb(211, 224, 251);
 }
@@ -16,10 +23,18 @@ header{
     background-color: rgb(211, 224, 251);
 }
 aside{
-    font-size: 15px;
+    font-size: 17px;
+}
+
+#asidelist li{
+    background-color: rgb(236, 211, 251);
 }
 a{
     text-decoration: none;
+}
+button{
+    border-style: none;
+    background-color: unset;
 }
 option{
     background-color: rgb(211, 224, 251);
@@ -29,9 +44,11 @@ option{
     color: white;
     height: 20;
 }
-body {
-    font-family: 'Quicksand', sans-serif;
-  }
+#finalBtn{
+ background-color: rgba(20, 19, 19, 0.808);
+ color: white;
+ padding: 25px;
+}
 .nav-item a{
    color: white;
    font-size: 20px;
@@ -61,4 +78,10 @@ body {
 }
 .newText{
     color: white;  
+}
+.priceSection{
+    background-color: rgb(211, 224, 251);
+    color: black;
+    font-size: 20px;
+    text-align:center;
 }
