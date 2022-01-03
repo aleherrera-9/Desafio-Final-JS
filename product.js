@@ -20,6 +20,7 @@ const infoText = `
   </ul> 
   <a class="btn m-1 text-danger" id="clearAll">Vaciar Carrito</a><br>
   `
+  //se usa para cargar los productos al dom
 function upData(product, idNumber) {
   $('#list').append(`
     <div class="card m-1 p-1 border-light text-center" id="product${idNumber + 1}"style="width: 20rem;">
@@ -44,6 +45,7 @@ function upData(product, idNumber) {
   </div>
   `  )
 }
+//boton de compra
 function updateDom(allData) {
   allData.forEach((item, idNumber) => {
     $(`#shop${idNumber + 1}`).on('click', () => {
@@ -68,6 +70,7 @@ function updateDom(allData) {
     })
   })
 }
+//carrito de compras que muestra una tabla, el aside va contener el precio final
 function basketProducts(productResume) {
   $('#list').append(
     `<table class="table" >
