@@ -1,14 +1,44 @@
-.carousel{
-margin: 50px;
+* {
+    padding: 0;
+    margin: 0;
+  }
+header{
+ background-color: rgb(211, 224, 251);
 }
-.nav-item{
-   background-color:rgba(159, 139, 187, 0.541);
-   border-radius: 10px;
+.card-img-top:hover{
+    opacity: 0.4;
 }
-#finalizar{
-    background-color:rgba(139, 187, 171, 0.541);
-    border-radius: 10px; 
+#itemSearch {
+    background-color: rgb(248, 240, 250);
+    background-color: rgba(248, 240, 250, 0.678);
 }
+.btn-outline-new{
+    background-color: rgb(211, 224, 251);
+}
+aside{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+option{
+    background-color: rgb(211, 224, 251);
+    color: white;
+}
+#button-addon2{
+    color: white;
+    height: 20;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+  }
+.nav-item a{
+   color: white;
+   font-size: 20px;
+   padding: 15px;
+   margin-right: 5px;
+}
+
 #list{
     background-color: rgba(215, 247, 250, 0.205);
     border-radius: 10px;
@@ -16,14 +46,12 @@ margin: 50px;
     margin-bottom: 50px;
 }
 #logo{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   
+    text-align: start;
+    font-size: 80px;
+    margin: 15px;
 }
-#logo img{
-    background-color: rgba(238, 238, 238, 0.493);
-    border-radius: 360px;
+#logo a{
+  text-decoration: none;
 }
 #delay{
     margin-top: 20px;

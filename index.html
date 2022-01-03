@@ -6,43 +6,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <title>IBASHO</title>
 </head>
-<body >
-  <div id="logo"><img src="multimedia/logo1.png" width="200px" ></div>
-  <div>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href=""><img src="Multimedia/add1.png" class="d-block w-100 " alt="..."></a>
-        </div>
-        <div class="carousel-item">
-          <a href=""><img src="Multimedia/add2.png" class="d-block w-100" alt="..."></a>
+
+<body>
+ <header>
+  <nav class="nav flex-column">
+    <div id="logo">
+      <a href="index.html"><p class="text-dark fw-lighter">IBASHO</p></a>
+    </div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <div class="input-group mb-3">
+            <input id="itemSearch" type="text" class="form-control" placeholder="Buscar" aria-label="Items search"
+              aria-describedby="button-addon2">
+            <button class="btn" type="button" id="button-addon2"><svg
+                xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="dark" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg></button>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item" id="basket">
+      </li>
+
+    </ul>
+  </nav>
+ </header>
+  <div id="slider">
+    <a href=""><img src="Multimedia/slider-rebajas-d.gif" class="d-block w-100" alt="..."></a>
+  </div>
+  <div class=" text-center" id="buttons"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <aside>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><p >Filtrar por</p></li>
+            <li class="list-group-item text-uppercase"><p >tipo</p>
+            <ul class="list-group list-group-flush">
+              <li  class="list-group-item"><a >Bolsas</a></li>
+              <li  class="list-group-item"><a >Personalizados</a></li>
+              <li  class="list-group-item"><a >Buzos</a></li>
+              <li  class="list-group-item"><a >Camperas</a></li>
+            </ul>
+            </li>
+            <li class="list-group-item text-uppercase"><p >color</p>
+              <ul class="list-group list-group-flush">
+                <li  class="list-group-item"><a >Negro</a></li>
+                <li  class="list-group-item"><a >Marron</a></li>
+                <li  class="list-group-item"><a >Gris</a></li>
+                <li  class="list-group-item"><a >Blanco</a></li>
+                <li  class="list-group-item"><a >Celeste</a></li>
+                <li  class="list-group-item"><a >Otros</a></li>
+              </ul></li>
+            <li class="list-group-item text-uppercase"><p >precio</p>
+              <ul class="list-group list-group-flush">
+                <li  class="list-group-item"><a >Precio mas bajo</a></li>
+                <li  class="list-group-item"><a >Precio mas alto</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </aside>
+      </div>
+      <div class="col-10">
+        <div class="container text-center">
+          <div class="row text-center justify-content-center text-uppercase" id="list"></div>
         </div>
       </div>
     </div>
-    
-    <div class=" text-center" id="buttons"></div>
   </div>
-  <div class="container text-center">
-    <div class="row text-center justify-content-center text-uppercase" id="list"></div>
-    <div class="row text-center text-dark text-uppercase" id="finalPrice"></div>
-    <div id="delay"></div>
-  </div>
-
+  <div class="row text-center text-dark text-uppercase" id="finalPrice"></div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
   <script src="Bootstrap/js/bootstrap.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="product.js"></script>
   <script src="script.js"></script>
-</body>
 
+</body>
 
 </html>
