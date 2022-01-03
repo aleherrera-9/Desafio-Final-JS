@@ -5,6 +5,7 @@ $(() => {
     .then(allData => {
       orderByLower(allData);
       orderByHigher(allData);
+      //busca por cada item y filtra los productos
       $('#camperas').on('click', () => {
         orderByType(allData, "campera");
       })
@@ -108,6 +109,7 @@ function list(oneProduct, qty) {
     localStorage.setItem("Productos", JSON.stringify(productResume));
   }
 }
+//Alerta que se agrega al dom cuando se agrega un producto al carrito
 function Alert(item, itemQty) {
   Swal.fire({
     title: `<p class="text-center text-dark fs-3">${item.name}</p><p class="text-dark fs-5">Agregado al carrito</p><p class="text-center text-dark fs-5">Cantidad : ${itemQty} </p>`,
@@ -122,6 +124,7 @@ function Alert(item, itemQty) {
     showConfirmButton: false
   })
 }
+//orden por menor precio
 function orderByLower(allData) {
   $('#low').on('click', () => {
     allData.sort(function (a, b) {
@@ -131,7 +134,6 @@ function orderByLower(allData) {
       if (a.price < b.price) {
         return -1;
       }
-      // a must be equal to b
       return 0;
     });
     $('#list').empty();
@@ -141,6 +143,7 @@ function orderByLower(allData) {
     })
   })
 }
+//orden por mayor precio
 function orderByHigher(allData) {
   $('#high').on('click', () => {
     allData.sort(function (a, b) {
@@ -160,6 +163,7 @@ function orderByHigher(allData) {
     })
   })
 }
+//orden por tipo de producto
 function orderByType(allData, dato) {
   let list = [];
   for (const item of allData) {
@@ -173,6 +177,7 @@ function orderByType(allData, dato) {
     updateDom(list);
   })
 }
+//cada producto tiene una bandera que indica si esta en oferta o no
 function orderBySale(allData) {
   let list = [];
   for (const item of allData) {
