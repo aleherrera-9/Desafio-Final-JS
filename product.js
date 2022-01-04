@@ -60,12 +60,6 @@ function updateDom(allData) {
         list(item, itemQty);
         Alert(item, itemQty);
         $(`#itemQty${idNumber + 1}`).prop('selectedIndex', 0);
-        // $(`#text${idNumber + 1}`).append(`<br><p class="text-center text-white">${item.name} agregado al carrito</p><p class="5text-center text-white ">Cantidad : ${itemQty} </p>`)
-        // $(`#text${idNumber + 1}`).slideDown("slow");
-        // setTimeout(function () {
-        //   $(`#text${idNumber + 1}`).toggle("slow");
-        //   $(`#text${idNumber + 1}`).empty();
-        // }, 2000)
       }
     })
   })
